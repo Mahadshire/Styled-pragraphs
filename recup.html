@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled pragraphs</title>
+    <style>
+        div{position: relative;
+            top: 100px;
+            margin: auto;
+            border-radius: 15px;
+            /* background-color: aqua; */
+            padding: 15px;
+            text-align: center;
+            width: 400px;
+            box-shadow: 2px 2px 10px rgba(127, 127, 127, 0.9);
+        }
+        p:hover{
+            transform: scale(0.9);
+        }
+        /* div{
+            margin-top: 100px;    
+        } */
+        p{
+            border-radius: 10px;  
+            padding: 8px;
+            font-size: 35px;
+            box-shadow: 2px 2px 10px rgba(27, 27, 27, 0.7);
+            animation-name: prograph;
+            animation-duration: 2s;
+            animation-direction: reverse;
+            animation-iteration-count: infinite;
+            
+        }
+        .green{
+            background-color: green;
+        }
+        .blue{
+            background-color: blue;
+            color: #fff;
+        }
+        .yellow{
+            background-color: yellow;
+            color: blue;
+        }
+        .red{
+            background-color: red;
+            color: white;
+        }
+        .pink{
+            background-color: pink;
+            color: #000;
+        }
+        @keyframes prograph{
+            0%{
+                color: aqua;
+            }
+            50%{
+                color: #e67e07;
+            }
+            100%{
+                color: hsl(131, 100%, 51%);
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+ <div>
+    <p class="blue">Blue Color</p>
+    <p class="red">red Color</p>
+    <p class="green">green Color</p>
+    <p class="yellow">yellow Color</p>
+    <p class="pink">pink Color</p>
+ </div>
+
+</body>
+</html>
